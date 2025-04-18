@@ -513,6 +513,7 @@ header nav .main-nav > li > a:hover {
 .works ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 40px;
 }
@@ -520,6 +521,7 @@ header nav .main-nav > li > a:hover {
 @media (max-width: 767px) {
     .works ul {
         justify-content: center;
+        gap: 20px;
     }
 }
 
@@ -1143,6 +1145,7 @@ header nav .main-nav > li > a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 5px;
     border-bottom: 2px solid white;
     margin-bottom: 30px;
@@ -1183,6 +1186,7 @@ header nav .main-nav > li > a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     max-width: 100%;
 }
@@ -1217,6 +1221,13 @@ header nav .main-nav > li > a:hover {
     cursor: pointer;
     border: none;
     padding: 15px 20px;
+}
+
+@media (max-width: 376px) {
+    .newsletter .sign form input[type="submit"] {
+        width: 100%;
+        padding: 10px 20px;
+    }
 }
 /* End Newsletter */
 
@@ -1384,13 +1395,13 @@ footer .info p {
 footer .info a {
     color: var(--main-color);
     border: 1px solid white;
-    padding: 8px 80px;
+    padding: 10px 20px;
     font-weight: bold;
 }
 
 @media (max-width: 767px) {
     footer .info a {
-        padding: 8px 50px;
+        /* padding: 8px 50px; */
     }
 }
 
